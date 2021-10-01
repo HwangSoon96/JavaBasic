@@ -7,6 +7,7 @@ public class TPC04 {
 		c = 30;
 		// a + b + c = ? 를 메서드 hap()에서 처리해보시오.
 		hap(a, b, c); // 메서드 호출 x = a, y = b, z = c
+		// 데이터가 100개 라고 상상하면 매개변수 다 쓰기도 너무 귀찮다. -> 배열 사용(하나의 구조로 묶어서 데이터 전달)
 		
 		int[] arr;
 		arr = new int[3];
@@ -15,7 +16,7 @@ public class TPC04 {
 		arr[1] = b;
 		arr[2] = c;
 		
-		hap2(arr); // hap2에 arr을 통째로 넘겨버려서 처리한다.
+		hap2(arr); // hap2에 arr(배열을 가리키는 메모리 번지)을 통째로 넘겨버려서 처리한다.
 		
 	}
 	public static void hap(int x, int y, int z) {

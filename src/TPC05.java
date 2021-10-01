@@ -25,8 +25,8 @@ public class TPC05 {
 		b[2][1] = 2;
 		b[2][2] = 3;
 		
-		for(int i = 0; i < b.length; i++) {
-			for(int j = 0; j < b[i].length; j++) {
+		for(int i = 0; i < b.length; i++) { // 각 동 이동
+			for(int j = 0; j < b[i].length; j++) { // 동의 각 층 이동
 				System.out.print(b[i][j] + "\t");
 			}
 			System.out.println();
